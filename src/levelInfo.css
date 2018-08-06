@@ -1,0 +1,28 @@
+.levelBase{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	text-align: center;
+	grid-template-columns: repeat(4, minmax(70px , auto));
+	/*border: 2px solid black;*/
+	justify-items: center; 
+}
+
+.levelInfo{
+	border: 2px solid black;
+	width: 200px;
+}
+
+.levelInfo h2{
+	margin: 10px;
+}
+.starImg{
+	width: 30px;
+}
+.starBox{
+	padding: 5px;
+}
+.starContainer{
+	display: inline;
+	float: left;
+}
