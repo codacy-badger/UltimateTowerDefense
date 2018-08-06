@@ -1,4 +1,20 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(10, auto);
+    text-align: center
+}
+
+.black {
+    background-color: green;
+    color: white;
+}
+
+.white {
+    background-color: brown;
+    color: white;
+}
+
+.each-div {
+    height: 50px;
+    width: 50px;
 }
