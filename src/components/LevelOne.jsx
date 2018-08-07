@@ -5,19 +5,22 @@ class LevelOne extends Component {
     let detail = this.props.detail.map((arr, index) => (
       <div key={index}>
         {arr.map((value, i) => {
-          if (value == 0) {
-            return <div key={i} className="black each-div">
-              {value}
-            </div>;
+          if (value === 0) {
+            return (
+              <div key={i} className="green each-div" id={`${index}${i}`}>
+                {}
+              </div>
+            );
           } else {
-            return <div key={i} className="white each-div">
-              {value}
-            </div>;
+            return (
+              <div key={i} className="red each-div" id={`${index}${i}`}>
+                {}
+              </div>
+            );
           }
         })}
       </div>
     ));
-    let grid = {};
     return (
       <div>
         <p>this is level 1 grid</p>
